@@ -1,26 +1,12 @@
-# OVERVIEW
+# DESCRIPTION
 
-huz-ui-spine is a sample huz component project which can be used in huz.com.
+This project was developed using the [huz-ui-spine](https://github.com/byhuz/huz-ui-spine) template.
 
-It includes some pre-configured files to develop a huz component locally without any issue. The sample project has two optional test environments, [grapejs](https://grapesjs.com) and [storybook](https://storybook.js.org).
+It can be examined at http://korayturk.com
 
-To test or get a live preview of the component in storybook:
+Raptor and powerup animations are used.
 
-* npm install
-* npm run storybook
-  
-To test or get a live preview of the component in grapejs:
+In the **raptor** animation, "walk", "roar", "jump", "gun-grab", "gun-holster" functions are done such as examples. The acceleration function has also been added.
+Only "bounce" function was used in **powerup** animation and acceleration was added.
 
-* npm install
-* "npm run watch" AND "serve" in two seperate terminals.
-
-
-# REACT SPINE CARD
-
-huz-ui-spine has @editor/assets folder which contains two [spine](http://esotericsoftware.com/) 2d skeletons, powerup, and raptor. Each skeleton has some animations like run, jump and etc.
-
-Our target is to give new UX experience to users by using 2d skeletons and dom elements. So we wish to create a spine card displaying all available animations for each skeleton. A spine card can play the animation a user selected. All extra features are welcome.
-
-To use a 2d spine skeleton please check it [here](http://esotericsoftware.com/spine-runtimes).
-
-Good lucks!
+Thanks for reviewing!
