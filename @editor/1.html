@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta  name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <!-- REACT -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- REDUX -->
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-redux@latest/dist/react-redux.min.js" crossorigin></script>
+
+    <!-- MATERIAL-UI-CORE -->
+    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js" crossorigin></script>
+
+    <!-- AXIOS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- i18Next -->
+    <script src="https://unpkg.com/i18next@19.4.3/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/react-i18next@11.3.5/dist/umd/react-i18next.min.js"></script>
+
+    <!-- HUZ-UI-PROJECT -->
+    <script src="https://unpkg.com/@byhuz/huz-ui-project@latest/dist/iife/index.js" crossorigin></script>
+    
+    <!-- COMPONENT -->
+    <script src="../dist/iife/index.js" crossorigin></script>
+    <script>
+      try {
+        document.domain = "byorbit.com";
+      } catch (e) {}
+    </script>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var mockup = SpineByHuz.initMockup();
+      ReactDOM.render(React.createElement(SpineByHuz.MockupProvider, {}, React.createElement(SpineByHuz.Spine, {})), document.getElementById("root"));
+    </script>
+  </body>
+</html>

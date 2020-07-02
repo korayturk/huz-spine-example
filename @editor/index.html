@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Editor ByOrbit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://unpkg.com/grapesjs" crossorigin></script>
+        <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" crossorigin>
+        <script src="../dist/@editor/iife/index.js" crossorigin></script>
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
+            body > div {
+                height: 100% !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gjs"></div>
+        <script type="text/javascript">
+            var editor = grapesjs.init({
+                container: '#gjs',
+                plugins: ["SpineByHuz"],
+                storageManager: {
+                    type: 0
+                },
+                noticeOnUnload: false
+            });
+        </script>
+    </body>
+</html>
